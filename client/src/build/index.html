@@ -1,0 +1,31 @@
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+
+  function loadClient() {
+    gapi.client.setApiKey("AIzaSyCCB5k_U80mBg8RoYhVgFCJ3t3xjKQAr1w");
+    return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+        .then(function() { console.log("GAPI client loaded for API"); },
+              function(err) { console.error("Error loading GAPI client for API", err); });
+  }
+
+
+  function execute() {
+    return gapi.client.youtube.search.list({})
+        .then(function(response) {
+                console.log("Response", response);
+              },
+              function(err) { console.error("Execute error", err); });
+  }
+
+const init = () => {
+    gapi.load("client:auth2", function() {
+      gapi.auth2.init({client_id: "18194820958-kvckajo32dgl0mc62v81drkhl1ofhtdq.apps.googleusercontent.com"});
+    });
+
+}
+
+init();
+loadClient();
+</script>
+
+<button onclick="execute()">execute</button>
