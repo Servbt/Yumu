@@ -9,6 +9,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 import Home from './pages/Home';
+import Gapi from './pages/Gapi';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
@@ -45,6 +46,10 @@ function App() {
           <StoreProvider>
             <Nav />
             <Routes>
+            <Route 
+                path="/gapi" 
+                element={<Gapi />} 
+              />
               <Route 
                 path="/" 
                 element={<Home />} 
