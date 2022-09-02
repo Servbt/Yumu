@@ -1,0 +1,527 @@
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "CFd5l4t_C7bfKgJ5HASoAKvEQKo",
+    "items": [
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "22FC11rVRGz7bnOhkhddr4LP7Vo",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy5EMEEwRUY5M0RDRTU3NDJC",
+        "snippet": {
+          "publishedAt": "2017-11-11T12:13:39Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OP full - Penpals - Tell Me Why",
+          "description": "LYCRIS:\n\nFeel no shame about shape\nWeather changes their phrase\nEven mother will show you another way\nSo put your glasses on\nNothing will be wrong\nThere's no blame, there's no fame\nIt's up to you\nThe first words should be finded\nWhatever hold you back\nI can, I can get it off\n\nTell me what, tell me what, tell me what you want\nI don't know why, don't know why, don't know why you afraid\nTell me what, tell me what, tell me what you say\nI don't know why, don't know why, too late, it's too late\n\nHave no fear for real\nIt's just a turning wheel\nOnce you start up there's no other way\nDon't put your eyes on boots\nStep forward your roots\nThere's no aid, there's no trade\nIt belongs to you\n\nBefore you miss something given\nYou should know what's the truth\nI can, I can make it out\n\nTell me what, tell me what, tell me what you want\nI don't know why, don't know why, don't know why you afraid\nTell me what, tell me what, tell me what you say\nI don't know why, don't know why, too late, it's too late\n\nBefore you miss something given\nYou should know what's the truth\nI can, I can make it out\n\nTell me what, tell me what, tell me what you want\nI don't know why, don't know why, don't know why you afraid\nTell me what, tell me what, tell me what you say\nI don't know why, don't know why, too late, it's too late\n\nTell me what, tell me what, tell me what you want\nI don't know why, don't know why, don't know why you afraid\nTell me what, tell me what, tell me what you say\nI don't know why, don't know why, too late, it's too late",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/I2rV8oKWSdM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/I2rV8oKWSdM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/I2rV8oKWSdM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/I2rV8oKWSdM/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 0,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "I2rV8oKWSdM"
+          },
+          "videoOwnerChannelTitle": "Caracas Ildor",
+          "videoOwnerChannelId": "UCdBT6JqtvJP3v4SLDgjV_6g"
+        },
+        "contentDetails": {
+          "videoId": "I2rV8oKWSdM",
+          "videoPublishedAt": "2013-04-24T07:19:00Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "59veZP_qsynDlQWx8VA0hF7OkM4",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy4yODlGNEE0NkRGMEEzMEQy",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:50:31Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 01 Behelit",
+          "description": "Berserk Anime Soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/wEvtnqh5OsE/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/wEvtnqh5OsE/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/wEvtnqh5OsE/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/wEvtnqh5OsE/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/wEvtnqh5OsE/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 1,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "wEvtnqh5OsE"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "wEvtnqh5OsE",
+          "videoPublishedAt": "2012-04-25T15:23:16Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "35r6y23Ay4Nan5gsjSK6PJpH4OA",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy4wMTcyMDhGQUE4NTIzM0Y5",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:50:35Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 02 Ghosts",
+          "description": "Berserk anime soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ouARR_kEPVc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ouARR_kEPVc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ouARR_kEPVc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/ouARR_kEPVc/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 2,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "ouARR_kEPVc"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "ouARR_kEPVc",
+          "videoPublishedAt": "2012-04-25T15:45:34Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "0Uv6iJnmb2ocH0MO-uV-JnP1Gy4",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy41MjE1MkI0OTQ2QzJGNzNG",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:50:40Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 03 Ball",
+          "description": "Berserk Anime Soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/rOhOezQfsm4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/rOhOezQfsm4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/rOhOezQfsm4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/rOhOezQfsm4/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 3,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "rOhOezQfsm4"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "rOhOezQfsm4",
+          "videoPublishedAt": "2012-04-25T19:37:28Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "qygMVC6liJcZYv5nKZjQmbs_Ckc",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy4wOTA3OTZBNzVEMTUzOTMy",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:50:46Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 04 Guts",
+          "description": "Berserk Anime Soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/dIoILN_KrhU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/dIoILN_KrhU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/dIoILN_KrhU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/dIoILN_KrhU/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 4,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "dIoILN_KrhU"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "dIoILN_KrhU",
+          "videoPublishedAt": "2012-04-26T19:02:03Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "8EAtrNLFU368E5k3Gf5c0kS6IyM",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy4xMkVGQjNCMUM1N0RFNEUx",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:50:53Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 05 Murder",
+          "description": "Bersrek Anime Soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/fucqUNzIU5c/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/fucqUNzIU5c/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/fucqUNzIU5c/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/fucqUNzIU5c/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 5,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "fucqUNzIU5c"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "fucqUNzIU5c",
+          "videoPublishedAt": "2012-04-26T19:41:46Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "lzokb5A_Px8d5u42iB6ybz-HDCk",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy41MzJCQjBCNDIyRkJDN0VD",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:50:58Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 06 Fear",
+          "description": "Berserk Anime Soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/NRCrqec5uA4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/NRCrqec5uA4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/NRCrqec5uA4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/NRCrqec5uA4/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 6,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "NRCrqec5uA4"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "NRCrqec5uA4",
+          "videoPublishedAt": "2012-04-26T19:50:24Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "mDpQGkiiNP5_w7HzdS-ptYCJSCI",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy5DQUNERDQ2NkIzRUQxNTY1",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:51:03Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 07 Monster",
+          "description": "Berserk Anime Soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/OO-QCjpXdfo/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/OO-QCjpXdfo/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/OO-QCjpXdfo/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/OO-QCjpXdfo/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 7,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "OO-QCjpXdfo"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "OO-QCjpXdfo",
+          "videoPublishedAt": "2012-04-26T20:01:11Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "pk6qo5pggYMiqjdb1BI43pXbZy0",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy45NDk1REZENzhEMzU5MDQz",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:51:10Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk OST - 08 Earth",
+          "description": "Berserk Anime Soundtrack",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/kLiRMorUV2g/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/kLiRMorUV2g/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/kLiRMorUV2g/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/kLiRMorUV2g/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 8,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "kLiRMorUV2g"
+          },
+          "videoOwnerChannelTitle": "BanYuuKotsu",
+          "videoOwnerChannelId": "UCqmpydZwaWv7KCW7CVGOUfg"
+        },
+        "contentDetails": {
+          "videoId": "kLiRMorUV2g",
+          "videoPublishedAt": "2012-04-26T20:15:18Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "0DfMmwp5_6GwgvbcTiOrud2DgHE",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy5GNjNDRDREMDQxOThCMDQ2",
+        "snippet": {
+          "publishedAt": "2017-06-11T08:51:28Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "AMV - Berserk - Forces",
+          "description": "While I'm not the biggest fan of the movie trilogy, it is more Berserk and more Berserk is always a good thing. The video is set to Susumu Hirasawa's Forces from the TV series--a brilliant song from a brilliant series.\n\n** Note that I do not claim ownership to either the video or audio content. The content is meant purely to entertain and inform without resulting in personal profit. **",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/n55QVlBoDxI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/n55QVlBoDxI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/n55QVlBoDxI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/n55QVlBoDxI/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/n55QVlBoDxI/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 9,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "n55QVlBoDxI"
+          },
+          "videoOwnerChannelTitle": "Mecha Taco",
+          "videoOwnerChannelId": "UC73b7cIQ834SAMjSm71CCEg"
+        },
+        "contentDetails": {
+          "videoId": "n55QVlBoDxI",
+          "videoPublishedAt": "2014-04-10T02:01:39Z"
+        }
+      },
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "yTNwc2rl94-JnAoFc-Kzt91UwmA",
+        "id": "UExHWjExakU4bUJGSnN3MmRPeVIxbHdYcnE3ZjhMU0oxcy45ODRDNTg0QjA4NkFBNkQy",
+        "snippet": {
+          "publishedAt": "2017-11-11T12:14:13Z",
+          "channelId": "UCrnzPnwwPVG1kk1OeFvVwQg",
+          "title": "Berserk soundtrack - Silver Fins - Waiting So Long (full song)",
+          "description": "Kenpuu Denki Berserk [剣風伝奇ベルセルク] ost - Silver Fins - Waiting So Long (full song)",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/70GD2SBCq64/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/70GD2SBCq64/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/70GD2SBCq64/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/70GD2SBCq64/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "TL_Nik0n",
+          "playlistId": "PLGZ11jE8mBFJsw2dOyR1lwXrq7f8LSJ1s",
+          "position": 10,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "70GD2SBCq64"
+          },
+          "videoOwnerChannelTitle": "Ivory",
+          "videoOwnerChannelId": "UCrskytW3LqCLQysE9Dcuq4w"
+        },
+        "contentDetails": {
+          "videoId": "70GD2SBCq64",
+          "videoPublishedAt": "2009-01-29T02:17:48Z"
+        }
+      }
+    ],
+    "pageInfo": {
+      "totalResults": 11,
+      "resultsPerPage": 25
+    }
+  }
+  
