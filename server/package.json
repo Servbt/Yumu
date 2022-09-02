@@ -1,7 +1,7 @@
 {
-  "name": "mern-server",
+  "name": "yumu",
   "version": "1.0.0",
-  "description": "",
+  "description": "youtube video downloader and playlist maker",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,7 +9,7 @@
     "seed": "node config/seeds.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "servbot",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.6.2",
