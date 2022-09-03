@@ -1,5 +1,5 @@
 import React from "react";
-
+// import DownloadBtn from "../videoDownloader/downloadBtn";
 const VideoDetail = ({ video }) => {
   if (!video) {
     return <div>
@@ -24,6 +24,9 @@ const VideoDetail = ({ video }) => {
       <div className="ui segment">
         <h4 className="ui header">{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
+        {/* <DownloadBtn videoID={video.id.videoId}/> */}
+
+        
       </div>
     </div>
   );

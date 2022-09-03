@@ -8,3 +8,9 @@
     max-width: 200px;
     max-height: 250px ;
 }
+
+
+.dlbutton {
+    padding: 15px;
+    margin-bottom: 10px;
+}
