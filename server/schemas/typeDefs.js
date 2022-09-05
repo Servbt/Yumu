@@ -6,6 +6,11 @@ const typeDefs = gql`
     name: String
   }
 
+  # type PlaylistTest2 {
+  #   _id: ID
+  #   name: String
+  # }
+  
   type Product {
     _id: ID
     name: String

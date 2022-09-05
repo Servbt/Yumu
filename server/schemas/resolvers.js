@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Product, Category, Order } = require('../models');
+const { User, Product, Category, Order, Video, Playlist, PlaylistTest2 } = require('../models');
 const { signToken } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
@@ -104,6 +104,18 @@ const resolvers = {
         await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
 
         return order;
+      }
+
+      throw new AuthenticationError('Not logged in');
+    },
+    addPlaylist: async (parent, { Videos }, context) => {
+      console.log(context);
+      if (context.user) {
+        const playlist = new Playlist({ Videos });
+
+        await User.findByIdAndUpdate(context.user._id, { $push: { playlists: playlist } });
+
+        return playlist;
       }
 
       throw new AuthenticationError('Not logged in');
