@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 
 const playlistSchema = new Schema({
     name: {
-        type: string,
+        type: String,
     },
     videos: [
         {

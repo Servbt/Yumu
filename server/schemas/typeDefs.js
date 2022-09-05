@@ -16,11 +16,24 @@ const typeDefs = gql`
     category: Category
   }
 
+  # type Video {
+  #   _id: ID
+  #   name: String
+  #   videoID: string
+  #   image: string
+  # }
+
   type Order {
     _id: ID
     purchaseDate: String
     products: [Product]
   }
+
+  # type Playlist {
+  #   _id: ID
+  #   name: string
+  #   videos: [Video]
+  # }
 
   type User {
     _id: ID
@@ -28,6 +41,7 @@ const typeDefs = gql`
     lastName: String
     email: String
     orders: [Order]
+    # playlists: [Playlist]
   }
 
   type Checkout {
@@ -40,6 +54,7 @@ const typeDefs = gql`
   }
 
   type Query {
+
     categories: [Category]
     products(category: ID, name: String): [Product]
     product(_id: ID!): Product
