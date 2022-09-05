@@ -16,12 +16,12 @@ const typeDefs = gql`
     category: Category
   }
 
-  # type Video {
-  #   _id: ID
-  #   name: String
-  #   videoID: string
-  #   image: string
-  # }
+  type Video {
+    _id: ID
+    name: String
+    videoID: String
+    image: String
+  }
 
   type Order {
     _id: ID
@@ -29,11 +29,11 @@ const typeDefs = gql`
     products: [Product]
   }
 
-  # type Playlist {
-  #   _id: ID
-  #   name: string
-  #   videos: [Video]
-  # }
+  type Playlist {
+    _id: ID
+    name: String
+    videos: [Video]
+  }
 
   type User {
     _id: ID
@@ -41,7 +41,7 @@ const typeDefs = gql`
     lastName: String
     email: String
     orders: [Order]
-    # playlists: [Playlist]
+    playlists: [Playlist]
   }
 
   type Checkout {
@@ -54,7 +54,7 @@ const typeDefs = gql`
   }
 
   type Query {
-
+    playlists: [Playlist]
     categories: [Category]
     products(category: ID, name: String): [Product]
     product(_id: ID!): Product
@@ -64,10 +64,11 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+    addPlaylist(videos: [ID]!): Playlist
     addOrder(products: [ID]!): Order
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+    updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
   }
 `;

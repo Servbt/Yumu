@@ -6,4 +6,4 @@ const Video = require('./Video');
 const Playlist = require('./Playlist');
 
 
-module.exports = { User, Product, Category, Order, Playlist };
+module.exports = { User, Product, Category, Order, Video, Playlist };
