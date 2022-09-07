@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
 
 import Playlist from '../components/Cart';
 import { useStoreContext } from '../utils/GlobalState';
@@ -9,7 +8,6 @@ import {
   ADD_TO_PLAYLIST,
 } from '../utils/actions';
 import { idbPromise } from '../utils/helpers';
-import spinner from '../assets/spinner.gif';
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
