@@ -26,7 +26,9 @@ const Playlist = () => {
   useEffect(() => {
     async function getPlaylist() {
       const playlist = await idbPromise('playlist', 'get');
+      console.log(playlist);
       dispatch({ type: ADD_MULTIPLE_TO_PLAYLIST, videos: [...playlist] });
+
     }
 
     if (!state.playlist.length) {
@@ -79,7 +81,7 @@ const Playlist = () => {
       {state.playlist.length ? (
         <div>
           {state.playlist.map((video) => (
-            <PlaylistItem key={video._id} video={video} />
+            <PlaylistItem key={video.videoID} video={video} />
           ))}
 
           <div className="flex-row space-between">

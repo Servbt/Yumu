@@ -10,7 +10,7 @@ const PlaylistItem = ({ video }) => {
   const removeFromPlaylist = video => {
     dispatch({
       type: REMOVE_FROM_PLAYLIST,
-      _id: video._id
+      videoID: video.videoID
     });
     idbPromise('playlist', 'delete', { ...video });
 
@@ -20,12 +20,12 @@ const PlaylistItem = ({ video }) => {
     <div className="flex-row">
       <div>
         <img
-          src={`${video.snippet.thumbnails.medium}`}
+          src={`${video.image}`}
           alt=""
         />
       </div>
       <div>
-        <div>{video.snippet.title}</div>
+        <div>{video.title}</div>
           <span
             role="img"
             aria-label="trash"

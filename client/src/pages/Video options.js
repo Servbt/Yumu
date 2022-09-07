@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { useQuery } from '@apollo/client';
 import Playlist from '../components/Playlist';
 import { useStoreContext } from '../utils/GlobalState';
 import {
@@ -36,18 +36,23 @@ const addToVideos = () => {
   const addtoPlaylist = () => {
     // const videoInPlaylist = playlist.find((playlistItem) => playlistItem._id === id);
     // if (videoInPlaylist) {
+      const videoObject = {
+        videoID: video.id.videoId,
+        title: video.snippet.title,
+        image: video.snippet.thumbnails.high.url
+      }
       dispatch({
         type: ADD_TO_PLAYLIST,
-        video: { video, },
+        video: videoObject,
       });
-      idbPromise('playlist', 'put', {video});
+      idbPromise('playlist', 'put', videoObject);
     }
   // };
 
   const removeFromPlaylist = () => {
     dispatch({
       type: REMOVE_FROM_PLAYLIST,
-      _id: video._id,
+      videoID: video,
     });
 
     idbPromise('playlist', 'delete', { video ,id});
@@ -79,7 +84,7 @@ const addToVideos = () => {
           /> */}
         </div>
       ) : null}
-      <Playlist />
+      <Playlist  />
     </>
   );
 }

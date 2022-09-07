@@ -21,13 +21,13 @@ export const reducer = (state, action) => {
       return {
         ...state,
         playlistOpen: true,
-        cart: [...state.playlist, action.video],
+        playlist: [...state.playlist, action.video],
       };
 
     case ADD_MULTIPLE_TO_PLAYLIST:
       return {
         ...state,
-        cart: [...state.playlist, ...action.videos],
+        playlist: [...state.playlist, ...action.videos],
       };
 
     case REMOVE_FROM_PLAYLIST:
