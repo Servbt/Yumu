@@ -15,7 +15,7 @@ const VideoDetail = ({ video }) => {
        </p>
     </div>;
   }
-  
+
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
   // console.log(typeof video);
