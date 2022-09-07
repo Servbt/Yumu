@@ -45,7 +45,7 @@ function Detail() {
         <div className="container my-1">
           <Link to="/gapi">← Back to Search</Link>
 
-          <h2>{currentVideo.name}</h2>
+          <h2>{currentVideo.title}</h2>
 
           <p>{currentVideo.description}</p>
 
