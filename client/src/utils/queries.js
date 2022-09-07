@@ -68,3 +68,20 @@ export const QUERY_USER = gql`
     }
   }
 `;
+
+
+export const QUERY_ALL_PLAYLISTS = gql`
+{
+  playlists {
+    _id
+    owner
+    name
+    videos {
+      _id
+      name
+      videoID
+      image
+    }
+  }
+}
+`
