@@ -8,6 +8,8 @@ const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useProductReducer({
     products: [],
     cart: [],
+    playlist: [],
+    playlistOpen: false,
     cartOpen: false,
     categories: [],
     currentCategory: '',

@@ -29,8 +29,8 @@ export const ADD_ORDER = gql`
   }
 `;
 
-export const SAVE_PLAYLIST = gql`
-  mutation savePlaylist($videos: [ID]!) {
+export const ADD_PLAYLIST = gql`
+  mutation addPlaylist($videos: [ID]!) {
     savePlaylist(videos: $videos) {
       playlists {
     _id
