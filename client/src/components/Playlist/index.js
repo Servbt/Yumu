@@ -26,13 +26,13 @@ const Playlist = () => {
   useEffect(() => {
     async function getPlaylist() {
       const playlist = await idbPromise('playlist', 'get');
-      dispatch({ type: ADD_MULTIPLE_TO_PLAYLIST, products: [...playlist] });
+      dispatch({ type: ADD_MULTIPLE_TO_PLAYLIST, videos: [...playlist] });
     }
 
-    if (!state.cart.length) {
+    if (!state.playlist.length) {
       getPlaylist();
     }
-  }, [state.cart.length, dispatch]);
+  }, [state.playlist.length, dispatch]);
 
   function togglePlaylist() {
     dispatch({ type: TOGGLE_PLAYLIST });
@@ -86,7 +86,7 @@ const Playlist = () => {
             <strong>Song Count: ${Playlist.length}</strong>
 
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Checkout</button>
+              <button onClick={submitCheckout}>Save/Download</button>
             ) : (
               <span>(log in to Download playlist)</span>
             )}
