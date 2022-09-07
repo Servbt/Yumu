@@ -1,5 +1,6 @@
 import React from "react";
 import VideoOptions from "../../pages/Video options";
+// import Playlist from "../Playlist";
 // import DownloadBtn from "../videoDownloader/downloadBtn";
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -27,7 +28,8 @@ const VideoDetail = ({ video }) => {
         <h4 className="ui header">{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
         {/* <DownloadBtn videoID={video.id.videoId}/> */}
-        <VideoOptions />
+        <VideoOptions video={video} />
+        {/* <Playlist key={video._id} item={video} /> */}
         
       </div>
     </div>

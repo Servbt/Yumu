@@ -25,7 +25,7 @@ const PlaylistItem = ({ video }) => {
         />
       </div>
       <div>
-        <div>{video.snippet.title}, ${video.snippet.thumbnails.medium}</div>
+        <div>{video.snippet.title}</div>
           <span
             role="img"
             aria-label="trash"

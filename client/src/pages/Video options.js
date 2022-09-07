@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Playlist from '../components/Playlist';
@@ -9,26 +9,27 @@ import {
 } from '../utils/actions';
 import { idbPromise } from '../utils/helpers';
 
-function VideoOptions() {
+const VideoOptions = ( currentVideo ) => {
+  console.log(currentVideo);
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
 
-  const [currentVideo   ] = useState({});
+  // const [currentVideo , setCurrentVideo   ] = useState({})
 
 
   const { playlist } = state;
 
 
   const addtoPlaylist = () => {
-    const videoInPlaylist = playlist.find((playlistItem) => playlistItem._id === id);
-    if (videoInPlaylist) {
+    // const videoInPlaylist = playlist.find((playlistItem) => playlistItem._id === id);
+    // if (videoInPlaylist) {
       dispatch({
         type: ADD_TO_PLAYLIST,
-        video: { ...currentVideo, },
+        video: { currentVideo, },
       });
-      idbPromise('playlist', 'put', { ...currentVideo, });
+      idbPromise('playlist', 'put', { currentVideo, id});
     }
-  };
+  // };
 
   const removeFromPlaylist = () => {
     dispatch({
@@ -36,7 +37,7 @@ function VideoOptions() {
       _id: currentVideo._id,
     });
 
-    idbPromise('playlist', 'delete', { ...currentVideo });
+    idbPromise('playlist', 'delete', { currentVideo ,id});
   };
 
   return (
