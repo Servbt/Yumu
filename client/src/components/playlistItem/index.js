@@ -12,7 +12,7 @@ const PlaylistItem = ({ video }) => {
       type: REMOVE_FROM_PLAYLIST,
       _id: video._id
     });
-    idbPromise('cart', 'delete', { ...video });
+    idbPromise('playlist', 'delete', { ...video });
 
   };
 
