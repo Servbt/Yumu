@@ -29,6 +29,23 @@ export const ADD_ORDER = gql`
   }
 `;
 
+export const SAVE_PLAYLIST = gql`
+  mutation savePlaylist($videos: [ID]!) {
+    savePlaylist(videos: $videos) {
+      playlists {
+    _id
+    owner
+    name
+    videos {
+      _id
+      name
+      videoID
+      image
+        }
+      }
+    }
+  }
+`;
 export const ADD_USER = gql`
   mutation addUser(
     $firstName: String!
