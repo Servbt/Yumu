@@ -66,3 +66,16 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_VIDEO = gql`
+  mutation addVideo($videos: [ID]!) {
+    saveVideo(videos: $videos) {
+    videos {
+      _id
+      name
+      videoID
+      image
+        }
+    }
+  }
+`;

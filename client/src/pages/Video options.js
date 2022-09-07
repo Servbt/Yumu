@@ -6,17 +6,30 @@ import { useStoreContext } from '../utils/GlobalState';
 import {
   REMOVE_FROM_PLAYLIST,
   ADD_TO_PLAYLIST,
+  ADD_VIDEO,
 } from '../utils/actions';
 import { idbPromise } from '../utils/helpers';
 
-const VideoOptions = ( currentVideo ) => {
-  // console.log(currentVideo);
+const VideoOptions = ( {video} ) => {
+  // console.log(video);
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
 
-  // const [currentVideo , setCurrentVideo   ] = useState({})
+  // const [video , setvideo   ] = useState({})
+const addToVideos = () => {
+  const videoObject = {
+    videoID: video.id.videoId,
+    title: video.snippet.title,
+    image: video.snippet.thumbnails.high.url
+  };
+  console.log(videoObject);
 
-
+  dispatch({
+    type: ADD_VIDEO,
+    video: videoObject
+  })
+  idbPromise('videos', 'add', videoObject)
+}
   const { playlist } = state;
 
 
@@ -25,34 +38,35 @@ const VideoOptions = ( currentVideo ) => {
     // if (videoInPlaylist) {
       dispatch({
         type: ADD_TO_PLAYLIST,
-        video: { currentVideo, },
+        video: { video, },
       });
-      idbPromise('playlist', 'put', { currentVideo, id});
+      idbPromise('playlist', 'put', {video});
     }
   // };
 
   const removeFromPlaylist = () => {
     dispatch({
       type: REMOVE_FROM_PLAYLIST,
-      _id: currentVideo._id,
+      _id: video._id,
     });
 
-    idbPromise('playlist', 'delete', { currentVideo ,id});
+    idbPromise('playlist', 'delete', { video ,id});
   };
 
   return (
     <>
-      {currentVideo && playlist ? (
+      {video && playlist ? (
         <div className="container my-1">
 
-          {/* <h2>{currentVideo.snippet.title}</h2> */}
+          {/* <h2>{video.snippet.title}</h2> */}
 
-          {/* <p>{currentVideo.snippet.description}</p> */}
+          {/* <p>{video.snippet.description}</p> */}
 
           <p>
+            <button onClick={addToVideos}>Add to Videos</button>
             <button onClick={addtoPlaylist}>Add to playlist</button>
             <button
-              disabled={!playlist.find((v) => v._id === currentVideo._id)}
+              disabled={!playlist.find((v) => v._id === video._id)}
               onClick={removeFromPlaylist}
             >
               Remove from playlist
@@ -60,8 +74,8 @@ const VideoOptions = ( currentVideo ) => {
           </p>
 
           {/* <img
-            src={`${currentVideo.snippet.thumbnails.high}`}
-            alt={currentVideo.snippet.title}
+            src={`${video.snippet.thumbnails.high}`}
+            alt={video.snippet.title}
           /> */}
         </div>
       ) : null}

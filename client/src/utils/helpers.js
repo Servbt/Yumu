@@ -6,6 +6,10 @@ export function pluralize(name, count) {
 }
 
 export function idbPromise(storeName, method, object) {
+  console.log(`store name: ${storeName}`);
+  console.log(`method : ${method}`);
+  console.log(`object : ${JSON.stringify(object)}`);
+  
   return new Promise((resolve, reject) => {
     const request = window.indexedDB.open('Yumu', 1);
     let db, tx, store;
@@ -14,8 +18,8 @@ export function idbPromise(storeName, method, object) {
       // db.createObjectStore('products', { keyPath: '_id' });
       // db.createObjectStore('categories', { keyPath: '_id' });
       // db.createObjectStore('cart', { keyPath: '_id' });
-      db.createObjectStore('videos', { keyPath: '_id' });
-      db.createObjectStore('playlist', { keyPath: '_id' });
+      db.createObjectStore('videos', { keyPath: 'videoID' });
+      db.createObjectStore('playlist', { keyPath: 'videoID' });
 
     };
 
@@ -33,6 +37,10 @@ export function idbPromise(storeName, method, object) {
       };
 
       switch (method) {
+        case 'add':
+          store.add(object);
+          resolve(object);
+          break;
         case 'put':
           store.put(object);
           resolve(object);

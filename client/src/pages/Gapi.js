@@ -20,11 +20,11 @@ class Gapi extends React.Component {
         this.setState({
             videos: response.data.items
         })
-        console.log("this is resp",response);
+        // console.log("this is resp",response);
     };
     handleVideoSelect = (video) => {
         this.setState({selectedVideo: video})
-        console.log(video);
+        // console.log(video);
         
     }
 
