@@ -36,7 +36,6 @@ const typeDefs = gql`
 
   type Playlist {
     _id: ID
-    owner: String
     name: String
     videos: [Video]
   }
@@ -60,6 +59,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    video(_id: ID!): Video
     playlists: [Playlist]
     categories: [Category]
     products(category: ID, name: String): [Product]

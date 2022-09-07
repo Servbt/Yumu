@@ -99,3 +99,14 @@ export const QUERY_ALL_PLAYLISTS = gql`
   }
 }
 `
+
+export const QUERY_VIDEOS = gql`
+  query getVideos($category: ID) {
+    video(_id: $id) {
+    _id
+    name
+    videoID
+    image
+  }
+  }
+`;

@@ -1,33 +1,72 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { useQuery } from '@apollo/client';
+import { QUERY_VIDEOS } from '../utils/queries';
 import Playlist from '../components/Playlist';
 import { useStoreContext } from '../utils/GlobalState';
 import {
   REMOVE_FROM_PLAYLIST,
   ADD_TO_PLAYLIST,
+  ADD_VIDEO,
 } from '../utils/actions';
 import { idbPromise } from '../utils/helpers';
 
+
 const VideoOptions = ( currentVideo ) => {
-  console.log(currentVideo);
+  // console.log(currentVideo);
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
 
-  // const [currentVideo , setCurrentVideo   ] = useState({})
+  const [ , setCurrentVideo] = useState({})
+  const { loading, data } = useQuery(QUERY_VIDEOS);
+  const { videos, playlist } = state;
 
+  useEffect(() => {
+    // already in global store
+    if (videos.length) {
+      setCurrentVideo(videos.find((video) => video._id === id));
+    } else if (!videos.find((video)=> video.id)){
+      dispatch({
+        type: ADD_VIDEO,
+        videos: data.video,
+      });
 
-  const { playlist } = state;
+      data.videos.forEach((video) => {
+        idbPromise('video', 'put', video);
+      });
+    }
+    // retrieved from server
+    else if (data) {
+      dispatch({
+        type: QUERY_VIDEOS,
+        videos: data.video,
+      });
+
+      data.videos.forEach((video) => {
+        idbPromise('video', 'put', video);
+      });
+    }
+    // get cache from idb
+    else if (!loading) {
+      idbPromise('video', 'get').then((indexedVideos) => {
+        dispatch({
+          type: QUERY_VIDEOS,
+          videos: indexedVideos,
+        });
+      });
+    }
+  }, [videos, data, loading, dispatch, id]);
 
 
   const addtoPlaylist = () => {
     // const videoInPlaylist = playlist.find((playlistItem) => playlistItem._id === id);
     // if (videoInPlaylist) {
+      setCurrentVideo(currentVideo.id.videoId === id);
       dispatch({
         type: ADD_TO_PLAYLIST,
         video: { currentVideo, },
       });
-      idbPromise('playlist', 'put', { currentVideo, id});
+      idbPromise('playlist', 'put', { currentVideo});
     }
   // };
 

@@ -4,11 +4,18 @@ import {
   REMOVE_FROM_PLAYLIST,
   ADD_MULTIPLE_TO_PLAYLIST,
   DELETE_PLAYLIST,
-  TOGGLE_PLAYLIST
+  TOGGLE_PLAYLIST,
+  ADD_VIDEO,
 } from "./actions";
 
 export const reducer = (state, action) => {
   switch (action.type) {
+
+    case ADD_VIDEO:
+      return {
+        ...state,
+        videos: [...state.videos, action.video],
+      };
 
     case ADD_TO_PLAYLIST:
       return {

@@ -79,7 +79,7 @@ const Playlist = () => {
       {state.playlist.length ? (
         <div>
           {state.playlist.map((video) => (
-            <PlaylistItem key={video._id} item={video} />
+            <PlaylistItem key={video._id} video={video} />
           ))}
 
           <div className="flex-row space-between">
