@@ -40,7 +40,7 @@ const Playlist = () => {
 
   // function calculateTotal() {
   //   let sum = 0;
-  //   state.cart.forEach((item) => {
+  //   state.playlist.forEach((item) => {
   //     sum += item.price * item.purchaseQuantity;
   //   });
   //   return sum.toFixed(2);
@@ -62,7 +62,7 @@ const Playlist = () => {
 
   if (!state.playlistOpen) {
     return (
-      <div className="cart-closed" onClick={togglePlaylist}>
+      <div className="playlist-closed" onClick={togglePlaylist}>
         <span role="img" aria-label="Music">
         🎶
         </span>
@@ -71,7 +71,7 @@ const Playlist = () => {
   }
 
   return (
-    <div className="cart">
+    <div className="playlist">
       <div className="close" onClick={togglePlaylist}>
         [close]
       </div>

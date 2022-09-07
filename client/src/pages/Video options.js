@@ -9,7 +9,7 @@ import {
 } from '../utils/actions';
 import { idbPromise } from '../utils/helpers';
 
-function Detail() {
+function VideoDetail() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
 
@@ -71,4 +71,4 @@ function Detail() {
   );
 }
 
-export default Detail;
+export default VideoDetail;
