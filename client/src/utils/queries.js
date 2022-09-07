@@ -52,21 +52,34 @@ export const QUERY_CATEGORIES = gql`
 export const QUERY_USER = gql`
   {
     user {
-      firstName
-      lastName
-      orders {
+    _id
+    firstName
+    lastName
+    email
+    orders {
+      _id
+      purchaseDate
+      products {
         _id
-        purchaseDate
-        products {
-          _id
-          name
-          description
-          price
-          quantity
-          image
-        }
+        name
+        description
+        image
+        quantity
+        price
       }
     }
+    playlists {
+      _id
+      owner
+      name
+      videos {
+        _id
+        name
+        videoID
+        image
+      }
+    }
+  }
   }
 `;
 
