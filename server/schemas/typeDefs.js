@@ -36,6 +36,7 @@ const typeDefs = gql`
 
   type Playlist {
     _id: ID
+    owner: String
     name: String
     videos: [Video]
   }

@@ -59,7 +59,7 @@ const resolvers = {
           populate: 'category'
         });
 
-        return user.orders.id(_id);
+        return user.playlists.id(_id);
       }
 
       throw new AuthenticationError('Not logged in');
