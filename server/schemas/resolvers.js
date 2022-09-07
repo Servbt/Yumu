@@ -52,6 +52,18 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
+    playlist: async (parent, { _id }, context) => {
+      if (context.user) {
+        const user = await User.findById(context.user._id).populate({
+          path: 'playlist.videos',
+          populate: 'category'
+        });
+
+        return user.orders.id(_id);
+      }
+
+      throw new AuthenticationError('Not logged in');
+    },
     checkout: async (parent, args, context) => {
       const url = new URL(context.headers.referer).origin;
       const order = new Order({ products: args.products });
