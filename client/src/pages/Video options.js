@@ -1,7 +1,7 @@
 import React, {  useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-import Playlist from '../components/Cart';
+import Playlist from '../components/Playlist';
 import { useStoreContext } from '../utils/GlobalState';
 import {
   REMOVE_FROM_PLAYLIST,
@@ -9,11 +9,11 @@ import {
 } from '../utils/actions';
 import { idbPromise } from '../utils/helpers';
 
-function VideoDetail() {
+function VideoOptions() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
 
-  const [currentVideo  ] = useState({});
+  const [currentVideo   ] = useState({});
 
 
   const { playlist } = state;
@@ -43,14 +43,12 @@ function VideoDetail() {
     <>
       {currentVideo && playlist ? (
         <div className="container my-1">
-          <Link to="/gapi">← Back to Search</Link>
 
-          <h2>{currentVideo.title}</h2>
+          {/* <h2>{currentVideo.snippet.title}</h2> */}
 
-          <p>{currentVideo.description}</p>
+          {/* <p>{currentVideo.snippet.description}</p> */}
 
           <p>
-            <strong>Price:</strong>${currentVideo.price}{' '}
             <button onClick={addtoPlaylist}>Add to playlist</button>
             <button
               disabled={!playlist.find((v) => v._id === currentVideo._id)}
@@ -60,10 +58,10 @@ function VideoDetail() {
             </button>
           </p>
 
-          <img
-            src={`${currentVideo.thumbnail}`}
-            alt={currentVideo.title}
-          />
+          {/* <img
+            src={`${currentVideo.snippet.thumbnails.high}`}
+            alt={currentVideo.snippet.title}
+          /> */}
         </div>
       ) : null}
       <Playlist />
@@ -71,4 +69,4 @@ function VideoDetail() {
   );
 }
 
-export default VideoDetail;
+export default VideoOptions;

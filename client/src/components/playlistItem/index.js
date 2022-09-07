@@ -20,12 +20,12 @@ const PlaylistItem = ({ video }) => {
     <div className="flex-row">
       <div>
         <img
-          src={`${video.image}`}
+          src={`${video.snippet.thumbnails.medium}`}
           alt=""
         />
       </div>
       <div>
-        <div>{video.name}, ${video.thumbnail}</div>
+        <div>{video.snippet.title}, ${video.snippet.thumbnails.medium}</div>
           <span
             role="img"
             aria-label="trash"

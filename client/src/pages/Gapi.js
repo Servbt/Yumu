@@ -3,6 +3,7 @@ import SearchBar from '../components/searchbar/searchbar';
 import youtube from '../apis/youtubeApi';
 import VideoList from '../components/videoList/videoList';
 import VideoDetail from '../components/videoDetail/videoDetail';
+import Playlist from '../components/Playlist';
 
 class Gapi extends React.Component {
     state = {
@@ -29,6 +30,7 @@ class Gapi extends React.Component {
 
     render() {
         return (
+            
             <div className='ui container' style={{marginTop: '1em'}}>
                 <SearchBar handleFormSubmit={this.handleSubmit}/>
                 <div className='ui grid'>
@@ -41,7 +43,10 @@ class Gapi extends React.Component {
                         </div>
                     </div>
                 </div>
+             <Playlist />
+
             </div>
+            
         )
     }
 }

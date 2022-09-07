@@ -1,4 +1,5 @@
 import React from "react";
+import VideoOptions from "../../pages/Video options";
 // import DownloadBtn from "../videoDownloader/downloadBtn";
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -13,6 +14,7 @@ const VideoDetail = ({ video }) => {
        </p>
     </div>;
   }
+  
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
   console.log(typeof video);
@@ -25,7 +27,7 @@ const VideoDetail = ({ video }) => {
         <h4 className="ui header">{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
         {/* <DownloadBtn videoID={video.id.videoId}/> */}
-
+        <VideoOptions />
         
       </div>
     </div>
