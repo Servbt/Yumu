@@ -8,14 +8,14 @@ const { Provider } = StoreContext;
 
 const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useVideoReducer({
-    products: [],
-    cart: [],
+    // products: [],
+    // cart: [],
     videos: [],
     playlist: [],
     playlistOpen: false,
-    cartOpen: false,
-    categories: [],
-    currentCategory: '',
+    // cartOpen: false,
+    // categories: [],
+    // currentCategory: '',
   });
 
   return <Provider value={[state, dispatch]} {...props} />;

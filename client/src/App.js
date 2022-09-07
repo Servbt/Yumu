@@ -10,7 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 
 import Home from './pages/Home';
 import Gapi from './pages/Gapi';
-import Detail from './pages/Detail';
+// import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -70,10 +70,10 @@ function App() {
                 path="/orderHistory" 
                 element={<OrderHistory />} 
               />
-              <Route 
-                path="/products/:id" 
-                element={<Detail />} 
-              />
+              {/* <Route 
+                path="/videos/:id" 
+                element={<Video Options />} 
+              /> */}
               <Route
                 path="*" 
                 element={<NoMatch />} 

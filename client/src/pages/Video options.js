@@ -23,29 +23,26 @@ const VideoOptions = ( currentVideo ) => {
 
   useEffect(() => {
     // already in global store
-    if (videos.length) {
+    if (videos) {
       setCurrentVideo(videos.find((video) => video._id === id));
     } else if (!videos.find((video)=> video.id)){
       dispatch({
         type: ADD_VIDEO,
-        videos: data.video,
+        videos: currentVideo,
       });
-
-      data.videos.forEach((video) => {
-        idbPromise('video', 'put', video);
-      });
+      idbPromise('video', 'put', currentVideo);
     }
     // retrieved from server
-    else if (data) {
-      dispatch({
-        type: QUERY_VIDEOS,
-        videos: data.video,
-      });
+    // else if (data) {
+    //   dispatch({
+    //     type: QUERY_VIDEOS,
+    //     videos: data.video,
+    //   });
 
-      data.videos.forEach((video) => {
-        idbPromise('video', 'put', video);
-      });
-    }
+    //   data.videos.forEach((video) => {
+    //     idbPromise('video', 'put', video);
+    //   });
+    // }
     // get cache from idb
     else if (!loading) {
       idbPromise('video', 'get').then((indexedVideos) => {
@@ -61,7 +58,7 @@ const VideoOptions = ( currentVideo ) => {
   const addtoPlaylist = () => {
     // const videoInPlaylist = playlist.find((playlistItem) => playlistItem._id === id);
     // if (videoInPlaylist) {
-      setCurrentVideo(currentVideo.id.videoId === id);
+      setCurrentVideo(currentVideo._id === id);
       dispatch({
         type: ADD_TO_PLAYLIST,
         video: { currentVideo, },
