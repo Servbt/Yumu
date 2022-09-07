@@ -10,7 +10,7 @@ import {
 import { idbPromise } from '../utils/helpers';
 
 const VideoOptions = ( currentVideo ) => {
-  console.log(currentVideo);
+  // console.log(currentVideo);
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
 
