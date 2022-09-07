@@ -85,7 +85,7 @@ const Playlist = () => {
           ))}
 
           <div className="flex-row space-between">
-            <strong>Song Count: ${Playlist.length}</strong>
+            <strong>Song Count: {state.playlist.length}</strong>
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Save/Download</button>

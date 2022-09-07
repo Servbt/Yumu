@@ -45,17 +45,17 @@ const addToVideos = () => {
         type: ADD_TO_PLAYLIST,
         video: videoObject,
       });
-      idbPromise('playlist', 'put', videoObject);
+      idbPromise('playlist', 'add', videoObject);
     }
   // };
 
-  function removeFromPlaylist(v) {
+  const removeFromPlaylist = (video) => {
     dispatch({
       type: REMOVE_FROM_PLAYLIST,
-      videoID: v.videoId
+      videoID: video.id.videoID
     });
+    idbPromise('playlist', 'delete',  video );
 
-    idbPromise('playlist', 'delete', {v});
   };
 
   return (
@@ -72,7 +72,7 @@ const addToVideos = () => {
             <button onClick={addtoPlaylist}>Add to playlist</button>
             <button
               disabled={!playlist.find((v) => v.videoId === video.videoId)}
-              onClick={()=>{removeFromPlaylist(video)}}
+              onClick={()=>{removeFromPlaylist(video.id.videoID)}}
             >
               Remove from playlist
             </button>
