@@ -3,16 +3,16 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_PLAYLIST } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
-const PlaylistItem = ({ video }) => {
+const PlaylistItem = ( {video} ) => {
 
   const [, dispatch] = useStoreContext();
 
-  const removeFromPlaylist = video => {
+  const removeFromPlaylist = (video) => {
     dispatch({
       type: REMOVE_FROM_PLAYLIST,
       videoID: video.videoID
     });
-    idbPromise('playlist', 'delete', { ...video });
+    idbPromise('playlist', 'delete',  video );
 
   };
 

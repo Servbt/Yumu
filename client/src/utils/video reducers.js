@@ -32,7 +32,7 @@ export const reducer = (state, action) => {
 
     case REMOVE_FROM_PLAYLIST:
       let newState = state.playlist.filter(video => {
-        return video._id !== action._id;
+        return video.videoId !== action.videoId;
       });
 
       return {

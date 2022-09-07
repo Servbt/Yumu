@@ -52,7 +52,8 @@ export function idbPromise(storeName, method, object) {
           };
           break;
         case 'delete':
-          store.delete(object._id);
+          console.log(object.videoID);
+          store.delete(object.videoID);
           break;
         default:
           console.log('No valid method');
