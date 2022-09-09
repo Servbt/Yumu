@@ -14,9 +14,9 @@
     "graphql": "^14.6.0",
     "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "3.4.0",
+    "react-scripts": "4.0.2",
     "ytdl-core": "^4.11.1"
   },
   "scripts": {
