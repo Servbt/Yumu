@@ -53,7 +53,6 @@ There are many things that I still need to iron out for this application to have
 > - Apollo and query overhaul 
 > - User interactivity where one can follow and share playlists
 > - History tab that shows previous videos
-> - History tab that shows previous videos
 >
 >
 >More functionality on the way
